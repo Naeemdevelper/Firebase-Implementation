@@ -1,0 +1,25 @@
+
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="col-md-12">
+      <!-- Bootstrap grid system for responsive layout -->
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" formControlName="firstName" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" formControlName="lastName" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" formControlName="phone" class="form-control">
+      </div>
+
+      <button type="submit" [disabled]="userForm.invalid" class="btn btn-primary">Submit</button>
+    </form>

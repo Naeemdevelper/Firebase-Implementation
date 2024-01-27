@@ -1,0 +1,38 @@
+<hr>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <h3><i class="fa fa-lock fa-4x"></i></h3>
+                            <h2 class="text-center">Verify Email</h2>
+                            <div class="panel-body">
+
+                                <form class="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i
+                                                        class="glyphicon glyphicon-envelope color-blue"></i></span>
+
+                                                <input id="emailInput" [(ngModel)]="email" name="email"
+                                                    placeholder="email address" class="form-control" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="btn btn-lg btn-primary btn-block" value="verify" type="submit"
+                                                (click)="verify()">
+                                        </div>
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
